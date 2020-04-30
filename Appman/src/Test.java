@@ -25,9 +25,14 @@ public class Test {
 				case '9' : temp += input.charAt(i);break;
 			}
 		}
-		int MyNumber = Integer.parseInt(temp);
 		
-		System.out.print("The output should be: " + MyNumber + " in integer.");
+		int answer = 0, factor = 1;
+		for (int i = temp.length()-1; i >= 0; i--) {
+		    answer += (temp.charAt(i) - '0') * factor;
+		    factor *= 10;
+		}
+		System.out.print(answer);
 	}
+	
 
 }

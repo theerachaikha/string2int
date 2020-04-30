@@ -31,7 +31,7 @@ public class Test {
 		    answer += (temp.charAt(i) - '0') * factor;
 		    factor *= 10;
 		}
-		System.out.print(answer);
+		System.out.print("The output should be: " + answer + " in integer.");
 	}
 	
 
